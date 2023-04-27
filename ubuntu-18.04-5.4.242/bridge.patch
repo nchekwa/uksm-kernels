@@ -1,0 +1,19 @@
+--- br_private.h.orig   2023-04-28 00:49:01.175390269 +0200
++++ br_private.h        2023-04-28 01:24:32.601606230 +0200
+@@ -33,15 +33,13 @@
+
+ /* Control of forwarding link local multicast */
+ #define BR_GROUPFWD_DEFAULT    0
+-/* Don't allow forwarding of control protocols like STP, MAC PAUSE and LACP */
++/* Set 0x0000u -> to allow forwarding of control protocols like STP, MAC PAUSE and LACP */
+ enum {
+        BR_GROUPFWD_STP         = BIT(0),
+        BR_GROUPFWD_MACPAUSE    = BIT(1),
+        BR_GROUPFWD_LACP        = BIT(2),
+ };
+-
+-#define BR_GROUPFWD_RESTRICTED (BR_GROUPFWD_STP | BR_GROUPFWD_MACPAUSE | \
+-                               BR_GROUPFWD_LACP)
++#define BR_GROUPFWD_RESTRICTED 0x0000u
+ /* The Nearest Customer Bridge Group Address, 01-80-C2-00-00-[00,0B,0C,0D,0F] */
+ #define BR_GROUPFWD_8021AD     0xB801u
