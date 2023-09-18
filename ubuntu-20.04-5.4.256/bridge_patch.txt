@@ -1,0 +1,6 @@
+<kernel_source>/net/bridge/br_private.h
+
+
+#define BR_GROUPFWD_RESTRICTED <what ever value>
+change it to 
+#define BR_GROUPFWD_RESTRICTED 0x0000u

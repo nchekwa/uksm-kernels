@@ -1,0 +1,41 @@
+root@ubuntu:/usr/src/linux-5.4.256# patch -p1 < uksm-5.4.256.patch
+patching file Documentation/vm/uksm.txt
+patching file fs/exec.c
+patching file fs/proc/meminfo.c
+patching file include/asm-generic/pgtable.h
+patching file include/linux/ksm.h
+patching file include/linux/mm_types.h
+patching file include/linux/mmzone.h
+patching file include/linux/sradix-tree.h
+patching file include/linux/uksm.h
+patching file kernel/fork.c
+patching file lib/Makefile
+patching file lib/sradix-tree.c
+patching file mm/Kconfig
+patching file mm/Makefile
+patching file mm/ksm.c
+Hunk #1 succeeded at 858 (offset 1 line).
+patching file mm/memory.c
+Hunk #1 succeeded at 142 (offset 12 lines).
+Hunk #2 succeeded at 172 with fuzz 1 (offset 12 lines).
+Hunk #3 succeeded at 804 (offset 12 lines).
+Hunk #4 succeeded at 1094 (offset 23 lines).
+Hunk #5 succeeded at 2223 (offset -27 lines).
+patching file mm/mmap.c
+Hunk #2 succeeded at 179 (offset -6 lines).
+Hunk #3 succeeded at 730 (offset -8 lines).
+Hunk #4 succeeded at 872 (offset -8 lines).
+Hunk #5 succeeded at 978 (offset -8 lines).
+Hunk #6 succeeded at 1005 (offset -8 lines).
+Hunk #7 succeeded at 1472 (offset -8 lines).
+Hunk #8 succeeded at 1847 (offset -6 lines).
+Hunk #9 succeeded at 1889 (offset -7 lines).
+Hunk #10 succeeded at 2741 (offset 15 lines).
+Hunk #11 succeeded at 3049 (offset 16 lines).
+Hunk #12 succeeded at 3100 (offset 16 lines).
+Hunk #13 succeeded at 3178 (offset 16 lines).
+Hunk #14 succeeded at 3219 with fuzz 1 (offset 17 lines).
+Hunk #15 succeeded at 3331 (offset 17 lines).
+Hunk #16 succeeded at 3482 (offset 17 lines).
+patching file mm/uksm.c
+patching file mm/vmstat.c
